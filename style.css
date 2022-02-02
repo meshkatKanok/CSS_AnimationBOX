@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+.top_part{
+    height: 500px;
+    width:100%;
+    background-color:tomato;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    box-shadow:0 0 10px rgb(12, 172, 212),
+    0 0 20px rgb(12, 172, 212),
+    0 0 40px rgb(12, 172, 212),
+    0 0 80px rgb(12, 172, 212),
+    0 0 20px rgb(12, 172, 212);
+     
+
+}
+.top_part .box1{
+    height: 100px;
+    width: 100px;
+    background:red;
+   
+     
+    
+}
+.top_part .box2{
+    height: 100px;
+    width: 100px;
+    background:rgb(165, 209, 19);
+   
+
+}
+.top_part .box3{
+    height: 100px;
+    width: 100px;
+    background:rgb(2, 2, 2);
+}
+.top_part:hover{
+     background: rgb(92, 8, 226);
+    cursor: pointer;
+    transition:.10s;
+   
+}
+.top_part:hover .box1{
+    transition: .30s;
+    animation-direction:alternate;
+    animation: myfirst 5s 100;
+    position: relative;
+    animation:myfirst  10s infinite linear alternate;
+    box-shadow:0 0 10px rgb(12, 172, 212),
+    0 0 20px rgb(12, 172, 212),
+    0 0 40px rgb(12, 172, 212),
+    0 0 80px rgb(12, 172, 212),
+    0 0 20px rgb(12, 172, 212);
+     
+}
+@keyframes myfirst {
+      
+    0%   {background: red; left:20px; top: 20px;}
+    25%  {background: yellow; left:0px; top:200px;}
+    50%  {background: blue; left:20px; top:20px;}
+    75%  {background: green; left: 20px; top:20px;}
+    100% {background: red; left: 20px; top: 20px;}
+    to {transform: rotateX(180deg);}
+    
+  }
+  .top_part:hover .box2{
+    background: rgb(99, 182, 147);
+    transition: .30s;
+    animation-direction:alternate;
+    animation: mysecond 5s 100;
+    position: relative;
+    animation:mysecond  10s infinite linear alternate;
+    box-shadow:0 0 10px rgb(12, 172, 212),
+    0 0 20px rgb(12, 172, 212),
+    0 0 40px rgb(12, 172, 212),
+    0 0 80px rgb(12, 172, 212),
+    0 0 20px rgb(12, 172, 212);
+
+  }
+  @keyframes mysecond {
+       
+    0%   {background: red; left: 10px; top: 10px;}
+    25%  {background: yellow; left: 200px; top: 200px;}
+    50%  {background: blue; left:200px; top:200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;} 
+  
+    to{
+        transform: rotateX(180deg);
+    }
+  }
+
+  .top_part:hover .box3{
+    background: rgb(99, 182, 147);
+    transition: .30s;
+    animation-direction:alternate;
+    animation: mythird 5s 100;
+    position: relative;
+    animation:mythird  10s infinite linear alternate;
+    box-shadow:0 0 10px rgb(12, 172, 212),
+    0 0 20px rgb(12, 172, 212),
+    0 0 40px rgb(12, 172, 212),
+    0 0 80px rgb(12, 172, 212),
+    0 0 20px rgb(12, 172, 212);
+    
+
+  }
+  @keyframes mythird {
+    
+     0%   {background: red; left: 10px; top: 10px;}
+    25%  {background: yellow; left: 200px; top: 200px;}
+    50%  {background: blue; left:200px; top:200px;}
+    75%  {background: green; left: 50px; top: 200px;}
+    100% {background: red; left: 50px; top: 50px;} 
+    to{
+        transform: rotateX(200deg);
+     
+    }
+    
+  }
